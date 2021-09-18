@@ -1,4 +1,4 @@
-# Conclusion
+# Results and discussion
 
 ## Sample headline 1
 
