@@ -14,6 +14,8 @@ Due to the limited project time of five weeks, it was decided against the use of
 A retrospective meeting was also held once a week, which should contain the current problems and suggestions for improvement, but also positive aspects of the project. 
 That helped the project flow and the satisfaction of the participants.
 
+Each team member was assigned a role for which he was responsible. The roles were e.g. 'Moderator', 'Scrum master' or 'Git responsible person'.
+
 
 ### Open Source Software
 
