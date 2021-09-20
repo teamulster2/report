@@ -7,7 +7,10 @@ Symptoms of cognitive fatigue can mainly be described as follows: poor concentra
 
 Since there is currently no standardized test for recording cognitive fatigue available and biological markers cannot be used to identify these [4], the task was to write an application that should determine cognitive fatigue as part of a study on the basis of daily self-tests.
 
-The application should therefore be able to determine the general condition of a subject with the help of a questionnaire that should be filled out regularly and replace earlier paper questionnaires and be able to save it centrally in a database. 
-In addition, a self-test should be available, which in the best case should be completed several times a day. This should contain two tasks that check the respondent's reaction time and memory ability. 
-In addition, with each run of the self-test, the current emotional state and the current activity of the test person are recorded so that conclusions can be drawn from them later. 
-This information is recorded in a database that is to be exchanged regularly with a server database in order to be able to export all user data centrally for a study.
+Therefore, the application should be able to determine the general condition of a subject with the help of a questionnaire that should be filled out regularly and replace earlier paper questionnaires. Additionally, the application will be able to save their collected research data centrally on a server for further processing. 
+
+A self-test will be available. The app encourages the user to complete this test several times per day. The test itself contains two tasks that check the respondent's reaction time and memory ability. 
+
+In addition, with each run of the self-test, the current emotional state and the current activity of the test person are recorded so that conclusions can be drawn from them later on. 
+
+This information is stored in a database that is to be transferred regularly to a server database in order to be able to export all user data centrally for further analysis.

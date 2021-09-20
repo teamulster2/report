@@ -1,7 +1,7 @@
 ## User interface
 
 The user interface in the app should be kept as simple as possible in order to be accessible to everyone. 
-That means there is a start page with the logo and four options. 
+This means that there is a start page with the logo and four menu options. 
 From there, the settings lead to a subpage that provides certain functions for the client-server function. 
 The study URL can be selected here and data transfer can be ordered (Figure 3). 
 There is also the sub-item of audio detection, which, however, has not yet been implemented due to time constraints and the limitations of the project.
@@ -15,12 +15,12 @@ To illustrate this, emojis have been used that should be known to everyone.
 The PVT test starts immediately after the self-assessment. 
 As described in Chapter 2, this includes a test of reaction speed and attention span. 
 Then the spatial span task starts (Figure 5). 
-This in turn shows the respondent's attention span in which boxes that light up must be noted. 
+This shows the respondent's attention span in which boxes that light up must be noted. 
 It becomes more and more difficult depending on the level, as more boxes light up that the test person has to remember.
 
 Some pop-up dialogs were used to display the current game status, which guide the player through the various tasks. 
 In addition, all tests contain an overview of the current level and the score. 
-This should give the user the feeling of knowing where you are in the game and how many tasks and areas are still to be expected.
+This should give the user the feeling of knowing where he is in the game and how many tasks and areas are still to be expected.
 
 ![Self Assessment](../diagrams/implementation/ui_3.png "Self Assessment")
 
