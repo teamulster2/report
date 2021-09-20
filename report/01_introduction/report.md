@@ -35,22 +35,3 @@ are recorded so that conclusions can be drawn from them later. This
 information is recorded in a database that is to be exchanged regularly
 with a server database in order to be able to export all user data
 centrally for a study.
-
-\[1\] Shortz, A.E., Pickens, A., Zheng, Q. et al. The effect of
-cognitive fatigue on prefrontal cortex correlates of neuromuscular
-fatigue in older women. J NeuroEngineering Rehabil 12, 115 (2015).
-https://doi-org.ezproxy.hs-augsburg.de/10.1186/s12984-015-0108-3 \[2\]
-Wylie, G.R., Genova, H.M., DeLuca, J. et al. The relationship between
-outcome prediction and cognitive fatigue: A convergence of paradigms.
-Cogn Affect Behav Neurosci 17, 838--849 (2017).
-https://doi-org.ezproxy.hs-augsburg.de/10.3758/s13415-017-0515-y \[3\]
-Scott, E., Feeling irritated, stressed, and finding it hard to get stuff
-done? You might have cognitive fatigue (2019).
-https://metro.co.uk/2019/02/09/feeling-irritated-stressed-finding-hard-get-stuff-done-might-cognitive-fatigue-8469750/
-\[4\] Price E., Moore G., Galway L., Linden M. (2016) From Paper to Play
-- Design and Validation of a Smartphone Based Cognitive Fatigue
-Assessment Application. In: García C., Caballero-Gil P., Burmester M.,
-Quesada-Arencibia A. (eds) Ubiquitous Computing and Ambient
-Intelligence. UCAmI 2016. Lecture Notes in Computer Science, vol 10069.
-Springer, Cham.
-https://doi-org.ezproxy.hs-augsburg.de/10.1007/978-3-319-48746-5_33

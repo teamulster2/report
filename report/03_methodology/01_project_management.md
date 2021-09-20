@@ -1,6 +1,6 @@
 ## Project management
 
-Overall, the project took place within five weeks and five participants who worked full time on the project. The decision in the area of project management are described in more detail below.
+Overall, the project took place within five weeks and five participants who worked full time on the project. The decisions in the area of project management are described in more detail below.
 
 ### Agile project development with scrum
 
