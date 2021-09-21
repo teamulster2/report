@@ -10,8 +10,8 @@ The two points above are the self-test and the questionnaire, which are illustra
 ![Home & Settings Page](../diagrams/implementation/ui_1.png "Home and settings page")
 
 
-As described in Figure 4, the self test first depicts the current mood and activity of the test person by asking the test person 2 questions. 
-To illustrate this, emojis have been used that should be known to everyone. 
+As described in Figure 4, the self-test first depicts the current mood and activity of the test person by asking the test person 2 questions. 
+To illustrate this, emojis were used, which people from most countries of the world should be familiar with.
 The PVT test starts immediately after the self-assessment. 
 As described in Chapter 2, this includes a test of reaction speed and attention span. 
 Then the spatial span task starts (Figure 5). 

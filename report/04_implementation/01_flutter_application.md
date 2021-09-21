@@ -1,11 +1,11 @@
 ## Flutter application
 
-Flutter is a open source framwork developed by Google. 
-With Flutter you can create several applications (iOS, Android, web application) with just one single code base. 
-So the development does not take place platform-specifically, but in one programming language and environment.
+*Flutter* is a open source framework developed by Google. 
+*Flutter* gives you the ability to create several applications (iOS, Android, web application) with just one single code base. 
+Because of this, the development does not take place platform-specifically, but in one programming language and environment.
 
-The programming language used with Flutter is Dart. 
-Dart ist a object oriented programming language that is very similar to C# or Java. 
+The programming language used with *Flutter* is *dart*. 
+*Dart* is an object oriented programming language that is very similar to C# or Java. 
 
 // TODO: Mehr Informationen zu DART / Flutter
 

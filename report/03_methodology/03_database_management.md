@@ -11,15 +11,15 @@ Hive describes itself as a 'Fast, Enjoyable & Secure NoSQL Database' [5].
 That makes it easy to store database objects in boxes and access them again. 
 Hive in conjunction with Flutter also promises great support in terms of use, as this has been specially adapted to it [5]. 
 
-In addition, a NoSQL database was chosen because it is more flexible in terms of the variety of data in the area of research results and the speed required for storing such a large amount of data. 
-Espically when thinking of adding additional functionality like audio or video recognition and using artificial intelligence to get information out of that. 
+In addition to *Hive*, a NoSQL database was chosen because it is more flexible in terms of the variety of data in the area of research results and the speed required for storing such a large amount of data. 
+Especially when considering to add additional functionality like audio or video recognition and using artificial intelligence to collect and analyze further information. 
 This is particularly suitable for this, as the data is only saved and not read out within the app. 
 In this way, all data that is available can be collected without loss and no information is lost through a rigid relational form and can be sent to the server side.
 
 ### Server database
 
 In contrast to this, a relational database is used on the server side in order to be able to organize the results and export them for later evaluation. 
-We decided on the lightweight, relational database SQLite that describes itself as a 'small, fast, self-contained, hight-reliability, full-featured, SQL database engine. 
+We decided on the lightweight, relational database SQLite that describes itself as a 'small, fast, self-contained, hight-reliability, full-featured, SQL database engine'. 
 This is a rather traditional, but well-known approach to store large amounts of data.
 It promises a very structured distribution of the data, from which an export can be made available via a .json file later on.  
 
