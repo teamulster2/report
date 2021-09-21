@@ -6,22 +6,148 @@ web application) with a single code base.
 Because of this, the development does not take place platform-specifically,
 but in one programming language and environment.
 
-The programming language used with *Flutter* is *dart*. 
+The programming language used with *Flutter* is *Dart*. 
 *Dart* is an object oriented programming language that is very similar to C#
 or Java. 
 
-// TODO: Mehr Informationen zu DART / Flutter
-
+It's advantage over Java, C# etc. is its modern implementation where it fixes 
+common issues of old languages like Java. Dart for example implements null 
+sound safety null checker where a developer has to ensure that all variables 
+contain non null values. Otherwise the program will not compile.  
+This is a big advantage over Java since developers don't have to handle 
+*NullPointerException*s at runtime and don't risk forgetting them.
 
 All in all we tried to set up a reusable folder and file structure with
-seperation of concerns between the frontend / user interface and the business
+separation of concerns between the frontend / user interface and the business
 logic.
 
-### Config
+### Service Provider
 
-### Database
+The key part of the app is provided by a service provider. This service 
+provider ensures that all key elements like the config manager, the database 
+manager and notifications have been initialized successfully before enabling 
+the ui and allowing the user to interact with the app.  
+During runtime of the app the service provider can be accessed from everywhere 
+within the app's source code with help from the 
+[provider](https://pub.dev/packages/provider) package. This has the advantage 
+of utilizing the Singleton design pattern principle for all key parts of the 
+app.  
+While the provider package ensures the existence of only one service provider 
+instance, a critical issues arises when initializing all key parts. This is 
+mostly because of the asynchronous execution of code parts which have to be 
+synchronized. Solving this issue needed some sort of *Mutex* to be 
+implemented.  
+Unfortunately, *Dart* is kind of restrictive when it comes to using 
+rudimentary programming principles like *Mutexes*. Therefore, the `init` 
+method of the service provider takes a so called `Closure` which can be 
+described as nameless function. This function is invoked after all 
+initialization tasks have been completed.  
+The code example below explains this process in a more detailed manner.
+
+```dart
+// This class represents the actual app and the main widget.
+class SoTiredApp extends StatelessWidget {
+  const SoTiredApp({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    
+    ...
+    
+    // Register the Serviceprovider via the ChangeNotifierProvider provided 
+    // by the provider package.
+    return ChangeNotifierProvider(
+      create: (BuildContext context) => ServiceProvider(),
+      child: const SoTiredAppContent(),
+    );
+  }
+}
+
+...
+
+class SoTiredAppState extends State<SoTiredAppContent>
+    with WidgetsBindingObserver {
+  
+  ...
+
+  // This method is called immediately after every app start
+  @override
+  void initState() {
+    // call super method and instantiate widget observer
+
+    // Provider.of is part of the provider package and returns a registered
+    // provider. After that you can call every method this provider contains.
+    // The unnamed method the init function receives will set the variable 
+    // _doneInitializing to true which allows the typical Flutter build method 
+    // to ensure that every key has been initialized and returns the actual 
+    // app.
+    Provider.of<ServiceProvider>(context, listen: false)
+        .init(() => setState(() => _doneInitializing = true), path);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    if (_doneInitializing) {
+      return MaterialApp(...);
+    }
+  }
+
+  ...
+
+}
+
+...
+
+class ServiceProvider extends ChangeNotifier {
+  final ConfigManager _configManager = ConfigManager();
+  final DatabaseManager _databaseManager = DatabaseManager();
+  final Notifications _notifications = Notifications();
+
+  // ...
+  // Getter and Setter
+  // ...
+
+  Future<void> init(Function onDoneInitializing, <more arguments> ...) async {
+    // ...
+    // initialization tasks
+    // ...
+
+    onDoneInitializing(); // <- invoke this method after all init tasks have 
+                          // completed
+  }
+}
+```
+
+### Configuration Manager
+
+As mentioned in [Service Provider](service-provider) the configuration manager 
+is part of it. It also implements the Singleton design pattern principle to 
+ensure only one instance of itself and only one instance of client config 
+exists. The config manager provides various functions to write and read data 
+to / from a local json file, although its main purpose is fetching a 
+configuration from the study server. If no server can be reached and / or no 
+local json file exists, it holds a default configuration which can be loaded 
+any time.
+
+### Database Manager
+
+The database package is a relatively big package, as it holds multiple models 
+and their generated adapters. As every key element of the app it is also part 
+of the service provider class.  
+As most databases it contains basic CRUD (Create, Read, Update, Delete) 
+operations and also provides the ability to export all database contents as 
+json, so it can be send to the server. Mentionable when using *Hive* as 
+database is the fact that *Hive* automatically updates an entry if another 
+entry with matching keys is written to the same box (can be compared to tables 
+in relational database).
 
 ### Exceptions
+
+Exception handling in the soTired is quite straight forward. While developing 
+multiple custom exception have been implemented for specific use cases. When 
+running into issues at runtime, the user will be informed immediately via 
+popup windows. This allows him / her to react accordingly and solve the issue 
+quite fast.
 
 ### Notifications
 
@@ -34,13 +160,13 @@ The core folder contains all files that have to do with the home page and
 navigation bar, basically everything that has to be reached from inside the
 application.
 
-The modules folder contains all seperate parts that act independently. There
+The modules folder contains all separate parts that act independently. There
 is also a folder and a widget for the questionnaire, the spatial span task,
 the pvt test and the settings page.
 
 Each module contains a dart file with the main Scaffold or Container that
 contains all the contents of the specific subpage. Then you have a widget
-folder with all seperate smaller parts of the application. So there is for
+folder with all separate smaller parts of the application. So there is for
 example a QuestionnaireAnswer widget that is used for each answer of a
 specific question.
 
@@ -50,3 +176,10 @@ are clearly separated from each other so that errors or changes only have to
 be carried out once and not several times. In addition, the individual areas
 should be easy to find by other programmers.
 
+### Testing
+
+Testing within soTired was considered as important as every other part of the 
+app. Every function of the config manager and the database manager is 
+rigorously unit tested which ensures a certain amount of code quality.  
+Due to various difficulties all ui parts and also the data transfer could not 
+be tested in stand alone unit tests.
