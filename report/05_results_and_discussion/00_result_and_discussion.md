@@ -8,7 +8,7 @@ easily be expanded to an iOS or web application with the same code base.
 In addition, a server is available for evaluation purposes to which 
 the data can be transmitted.
 
-Above all, the results of the pvt and spatial span task in combination 
+Above all, the results of the pvt and spatial-span-task in combination 
 with the current mood and current activity should be able to provide 
 meaningful results to the people, who are responsible for the study. 
 In addition, the storage of the data from the questionnaire has been 
@@ -16,9 +16,10 @@ optimized and the questions can be exchanged.
 
 Interchangeability is particularly important for the final result 
 of the report. The app is not only designed for a single study, so 
-the values ​​can be adjusted. In addition, the data exchange is kept 
-anonymous, so that the content can only be used for study purposes 
-and no conclusions can be drawn about actual people. Both the client 
+the values ​​can be adjusted. In addition, privacy was kept in mind while
+designing the whole system, even though it is technically possible to track
+people over there public ip-address, no mechanism has been implemented to
+collect this or other research unrelated data. Both the client
 application and the server side were designed to be interchangeable 
 and adaptable.
 
