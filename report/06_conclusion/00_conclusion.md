@@ -1,7 +1,13 @@
 # Conclusion
 
-All in all, the developed application with its focus on platform-independence and interchangeability provides a solid basis for further studies on the fatigue assessment topic. Additionally the application based approach brings the advantage of convenient  data collection and representation in order to be analysed.
-Basically, all major functions from the original iOS application described in the paper [4] along with the  given user feedback were taken over with well-considered adjustments.
+All in all, the developed application with its focus on platform-independence
+and interchangeability provides a solid basis for further studies on the 
+fatigue assessment topic. Additionally the application based approach brings
+the advantage of convenient data collection and representation in order to be
+analysed.
+Basically, all major functions from the original iOS application described in 
+the paper [4] along with the  given user feedback were taken over with 
+well-considered adjustments.
 
 In order to generate added value for study purposes, we would recommend 
 some further developing, especially in the administration area. 
