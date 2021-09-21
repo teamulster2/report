@@ -25,6 +25,16 @@ logic.
 
 ### Notifications
 
+The app is able to send reminder notifications to the user. This can be set by 
+the researcher, how often and on which times this should happen. In this way, 
+the study participant can be specifically reminded to use the app. The setting 
+options can be found in the config, here both the desired notification times in 
+UTC and the notification text can be set. The heading of each notification is 
+the set study name. Further methods have been implemented which can be used to 
+send notifications to the user at intervals or after certain events. These 
+methods were only added to make the app easier to expand and do not play a role 
+in the current version.  
+
 ### User Interface
 
 The user interface (ui) part of the code is divided in a core, models and
