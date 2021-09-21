@@ -28,8 +28,8 @@ logic.
 The app is able to send reminder notifications to the user.
 The researcher can configure specific times, when notifications will be triggered. In this way, 
 the study participant can be specifically reminded to use the app. The settings 
-options can be found in the config, here both the desired notification times in 
-UTC and the notification text can be set. The heading of each notification is 
+option can be found in the config, where both the desired notification times 
+formatted as UTC and the notification text can be set. The heading of each notification is 
 the set study name. Further methods have been implemented which can be used to 
 send notifications to the user at intervals or after certain events. These 
 methods were only added to make the app easier to expand and do not play a role 
