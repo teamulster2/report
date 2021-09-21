@@ -25,8 +25,8 @@ logic.
 
 ### Notifications
 
-The app is able to send reminder notifications to the user. This can be set by 
-the researcher, how often and on which times this should happen. In this way, 
+The app is able to send reminder notifications to the user.
+The researcher can configure specific times, when notifications will be triggered. In this way, 
 the study participant can be specifically reminded to use the app. The setting 
 options can be found in the config, here both the desired notification times in 
 UTC and the notification text can be set. The heading of each notification is 
