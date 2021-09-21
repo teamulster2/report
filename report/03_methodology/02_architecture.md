@@ -33,14 +33,24 @@ devices.
 
 #### Server application
 
-// TODO
+The server commandline application is only supposed to collect data from the
+multiple client subjects of a research study, and to provided a way of
+exporting the collected data. Thus the server is a simple http server which
+listens for data-posts from the clients and on request supplies the clients
+also with a config for a study in which they are participating. To store the
+collected data from the clients the server saves all in a SQLite-database.
+Since the server is a commandline application it is structured with multiple
+subcommands which is facilitated through 'cobra' a framework in 'go'.
+Each subcommand is responsible for one task like i.e.: starting the server or
+exporting the database.
+
 
 ### User, client and server communication
 
-For the communication between the user, the client an the server, one can say
+For the communication between the user, the client and the server, one can say
 that the user only communicates with the client app. The client app then
 forwards the data to the server if the user agrees to share them. The first
-time the app is used the user needs to enter the study server url so the app
+time the app is used the user needs to enter the study server URL so the app
 can fetch a config file from the server. This file initializes the app with
 all necessary information. Architecture designs like this offer the advantage
 that the user does not necessarily have to rely on a stable internet
