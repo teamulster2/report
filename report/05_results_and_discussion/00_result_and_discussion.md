@@ -1,6 +1,6 @@
 # Results and discussion
 
-In this project, a new application has now been implemented that is 
+In this project, a new application has been implemented that is 
 based on the results of the report from [4]. As described in the 
 Methodology (3) chapter, a Flutter application is available, that is 
 initially geared and adapted to an Android application. This app can 
@@ -25,5 +25,5 @@ and adaptable.
 Possible further steps would now be to design an admin page so that 
 changes to the config of a study do not have to be made via a terminal 
 window, but at best can be made via a desktop application or a website. 
-The existing access via https can be expanded and adapted for 
+The existing access via http can be expanded and adapted for 
 this purpose.
