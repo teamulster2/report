@@ -10,7 +10,7 @@ database on both sides.
 ### Client database
 
 As described above, the client side is written with the help of the cross
-platform framework *Flutter* and the programming language *dart*. As client
+platform framework *Flutter* and the programming language *Dart*. As client
 side database *Hive* comes in handy. Hive describes itself as a 'Fast,
 Enjoyable & Secure NoSQL Database' [5]. That makes it easy to store database
 objects in boxes and access them again. Hive in conjunction with Flutter also

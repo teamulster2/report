@@ -24,7 +24,8 @@ part of a study on the basis of daily self-tests.
 
 Therefore, the application should be able to determine the general condition
 of a subject with the help of a questionnaire that should be filled out
-regularly and replace earlier paper questionnaires. Additionally, the
+regularly replacing earlier paper questionnaires. Additionally, the
+
 application will be able to save their collected research data centrally on a
 server for further processing. 
 

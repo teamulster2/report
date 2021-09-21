@@ -1,10 +1,8 @@
 # Background
 
-The project was a study project, which was initially relating to an existing
-project based on a work from the year 2016 [4]. This means that the project
-is about the implementation of a reusable and expandable platform in order to
-be able to carry out studies as part of self-tests on cognitive fatigue. In
-order to do this, the previous application and all of its properties first had
+The project is a study project, which refers to an existing
+project from the year 2016 [4]. The application evaluated there is a tool for studies on cognitive fatigue based on self-tests. The application presented in the paper on hand is a rewrite of the original application which incorporates results from the previous work.
+In order to do this, the previous application and all of its properties first had
 to be examined. Based on the examination results some tasks and their
 expansion options have been known already. Therefore, greater attention can be
 paid during the implementation phase.
@@ -12,12 +10,11 @@ paid during the implementation phase.
 ## Detection of cognitive fatigue
 
 In fact, there are not many ways to recognize cognitive fatigue because
-markers cannot be evaluated directly [4]. However, two tasks have emerged
-that can recognize cognitive fatigue based on the speed of reaction and the
-memory of test subjects. On the basis of previous information from the
-thesis, two further possibilities are not considered initially. The use of a
-questionnaire also plays an important role. So far, these have only been
-evaluated on paper and not electronically.
+markers cannot be evaluated directly [4]. However, two tasks (Spatial Span Task and Psychomotor Vigilance Task) have emerged
+as reliable indicators. They analyse the speed of reaction and the
+memory of test subjects. On the basis of previous information the use of a
+questionnaire also plays an important role especially to detect correlations
+between a task result  and the test person's self-assessment .
 
 ### Psychomotor vigiliance task
 

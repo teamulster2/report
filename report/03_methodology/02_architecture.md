@@ -18,7 +18,7 @@ about the test person several times a day after it has been carried out. The
 the self-test. There is also a questionnaire which is supposed to record the
 current condition of the subject at longer intervals. This happens via a
 certain number of questions with four choices each. Notifications encourage
-the user up to three times per day to open the app and take the self-test. In
+the user to open the app and take the self-test. The Default value for the notification Interval is three times a day. In
 addition to that, the current mood and current activity of the test person is
 saved before each self-test so that the data can also be interpreted
 reliably. Last but not least, the client application offers a settings page

@@ -2,7 +2,7 @@
 
 *Flutter* is a open source framework developed by Google. 
 *Flutter* gives you the ability to create several applications (iOS, Android,
-web application) with just one single code base. 
+web application) with a single code base. 
 Because of this, the development does not take place platform-specifically,
 but in one programming language and environment.
 
@@ -13,7 +13,7 @@ or Java.
 // TODO: Mehr Informationen zu DART / Flutter
 
 
-All in all we tried to set up a reusable folder and file structure with some
+All in all we tried to set up a reusable folder and file structure with
 seperation of concerns between the frontend / user interface and the business
 logic.
 

@@ -14,7 +14,7 @@ detail below.
 
 
 As described in Figure 4, the self-test first depicts the current mood and
-activity of the test person by asking the test person 2 questions. To
+activity of the test person by asking the test person two questions. To
 illustrate this, emojis were used, which people from most countries of the
 world should be familiar with. The PVT test starts immediately after the
 self-assessment. As described in Chapter 2, this includes a test of reaction

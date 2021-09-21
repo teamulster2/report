@@ -2,9 +2,9 @@
 
 ## Sample headline 1
 
-Sample Text
+// TODO write Text
 
 ## Sample headline 2
 
-Sample Text
+// TODO write Text
 
