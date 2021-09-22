@@ -36,8 +36,9 @@ to the user at intervals or after certain events. These methods were only added
 to make the app easier to expand and do not play a role in the current version. 
 One way to implement the notifications would have been to use firebase. 
 The team decided against this option in order to strengthen the stand alone app 
-concept and the privacy and locality of the users data. Instead, the flutter_local_notifications
-package was used, which makes it possible to make the app more independent of a server.
+concept and the privacy and locality of the users data. Instead, the 
+flutter_local_notificatiopackage was used, which makes it possible to make the 
+app more independent of a server.
 
 ### User Interface
 
