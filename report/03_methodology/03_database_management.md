@@ -33,7 +33,7 @@ In contrast to this, a relational database is used on the server side in order
 to be able to organize the results and export them for later evaluation. We
 decided on the lightweight, relational database SQLite that describes itself
 as a 'small, fast, self-contained, hight-reliability, full-featured, SQL
-database engine'. This is a rather traditional, but well-known approach to
+database engine' [16]. This is a rather traditional, but well-known approach to
 store large amounts of data. It promises a very structured distribution of
 the data, from which an export can be made available via a .json file later
 on. 

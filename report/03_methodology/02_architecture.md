@@ -35,7 +35,7 @@ devices.
 
 // TODO
 
-### User, client and server communication
+### User, client and server communication  
 
 For the communication between the user, the client an the server, one can say
 that the user only communicates with the client app. The client app then
