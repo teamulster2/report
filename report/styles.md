@@ -9,11 +9,11 @@ author:
 date: \today{}
 lang: en-GB
 documentclass: scrartcl
-mainfont: Arial
+mainfont: Times New Roman
 sansfont: Arial
-monofont: Arial
+monofont: Courier New
 mathfont: Arial
-fontsize: 11pt
+fontsize: 12pt
 header-includes: \usepackage{setspace}
 geometry: margin=2cm
 papersize: a4
@@ -21,6 +21,6 @@ indent: false
 linestretch: 1.1
 links-as-notes: true
 urlcolor: NavyBlue
-toc: false
-# toc-depth: 3
+toc: true
+toc-depth: 3
 ---

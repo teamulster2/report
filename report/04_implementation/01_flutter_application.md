@@ -10,10 +10,11 @@ The programming language used with *Flutter* is *Dart*.
 *Dart* is an object oriented programming language that is very similar to C#
 or Java. 
 
-It's advantage over Java, C# etc. is its modern implementation where it fixes 
-common issues of old languages like Java. Dart for example implements null 
-sound safety null checker where a developer has to ensure that all variables 
-contain non null values. Otherwise the program will not compile.  
+Its advantage over Java, C# etc. is a modern implementation where common 
+issues have been fixed, that older languages weren't aware of while being 
+developed. Dart for example implements null sound safety null checker where 
+a developer has to ensure that all variables contain non null values. 
+Otherwise the program will not compile.  
 This is a big advantage over Java since developers don't have to handle 
 *NullPointerException*s at runtime and don't risk forgetting them.
 
@@ -33,7 +34,7 @@ within the app's source code with help from the
 of utilizing the Singleton design pattern principle for all key parts of the 
 app.  
 While the provider package ensures the existence of only one service provider 
-instance, a critical issues arises when initializing all key parts. This is 
+instance, a critical issue arises when initializing all key parts. This is 
 mostly because of the asynchronous execution of code parts which have to be 
 synchronized. Solving this issue needed some sort of *Mutex* to be 
 implemented.  
@@ -120,34 +121,34 @@ class ServiceProvider extends ChangeNotifier {
 
 ### Configuration Manager
 
-As mentioned in [Service Provider](service-provider) the configuration manager 
-is part of it. It also implements the Singleton design pattern principle to 
-ensure only one instance of itself and only one instance of client config 
-exists. The config manager provides various functions to write and read data 
-to / from a local json file, although its main purpose is fetching a 
-configuration from the study server. If no server can be reached and / or no 
-local json file exists, it holds a default configuration which can be loaded 
-any time.
+As mentioned in chapter [Service Provider](service-provider) the configuration 
+manager is a part of it. It also implements the Singleton design pattern 
+principle to ensure, that only one instance of itself and only one instance of 
+client config exists. The config manager provides various functions to write 
+and read data to / from a local json file, although its main purpose is 
+fetching a configuration from the study server. If no server can be reached 
+and / or no local json file exists, it holds a default configuration which can 
+be loaded any time.
 
 ### Database Manager
 
 The database package is a relatively big package, as it holds multiple models 
 and their generated adapters. As every key element of the app it is also part 
 of the service provider class.  
-As most databases it contains basic CRUD (Create, Read, Update, Delete) 
+As most databases, it contains basic CRUD (Create, Read, Update, Delete) 
 operations and also provides the ability to export all database contents as 
 json, so it can be send to the server. Mentionable when using *Hive* as 
 database is the fact that *Hive* automatically updates an entry if another 
 entry with matching keys is written to the same box (can be compared to tables 
-in relational database).
+in relational databases or collections in well-known NoSQL databases).
 
 ### Exceptions
 
-Exception handling in the soTired is quite straight forward. While developing 
-multiple custom exception have been implemented for specific use cases. When 
-running into issues at runtime, the user will be informed immediately via 
-popup windows. This allows him / her to react accordingly and solve the issue 
-quite fast.
+Exception handling in the soTired app is quite straight forward. While 
+developing multiple custom exceptions have been implemented for specific use 
+cases. When running into issues at runtime, the user will be informed 
+immediately via popup windows. This allows him / her to react accordingly and 
+solve the issue quite fast.
 
 ### Notifications
 
