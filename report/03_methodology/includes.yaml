@@ -1,7 +1,7 @@
 input-files:
- - 03_methodology/00_methodology.md
- - 03_methodology/01_project_management.md
- - 03_methodology/02_architecture.md
- - 03_methodology/03_database_management.md
- - 03_methodology/04_user_interface.md
- - 03_methodology/05_client_server_communication.md
+ - 00_methodology.md
+ - 01_project_management.md
+ - 02_architecture.md
+ - 03_database_management.md
+ - 04_user_interface.md
+ - 05_client_server_communication.md

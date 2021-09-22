@@ -45,90 +45,20 @@ described as nameless function. This function is invoked after all
 initialization tasks have been completed.  
 The code example below explains this process in a more detailed manner.
 
-```dart
-// This class represents the actual app and the main widget.
-class SoTiredApp extends StatelessWidget {
-  const SoTiredApp({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    
-    ...
-    
-    // Register the Serviceprovider via the ChangeNotifierProvider provided 
-    // by the provider package.
-    return ChangeNotifierProvider(
-      create: (BuildContext context) => ServiceProvider(),
-      child: const SoTiredAppContent(),
-    );
-  }
-}
-
-...
-
-class SoTiredAppState extends State<SoTiredAppContent>
-    with WidgetsBindingObserver {
-  
-  ...
-
-  // This method is called immediately after every app start
-  @override
-  void initState() {
-    // call super method and instantiate widget observer
-
-    // Provider.of is part of the provider package and returns a registered
-    // provider. After that you can call every method this provider contains.
-    // The unnamed method the init function receives will set the variable 
-    // _doneInitializing to true which allows the typical Flutter build method 
-    // to ensure that every key has been initialized and returns the actual 
-    // app.
-    Provider.of<ServiceProvider>(context, listen: false)
-        .init(() => setState(() => _doneInitializing = true), path);
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    if (_doneInitializing) {
-      return MaterialApp(...);
-    }
-  }
-
-  ...
-
-}
-
-...
-
-class ServiceProvider extends ChangeNotifier {
-  final ConfigManager _configManager = ConfigManager();
-  final DatabaseManager _databaseManager = DatabaseManager();
-  final Notifications _notifications = Notifications();
-
-  // ...
-  // Getter and Setter
-  // ...
-
-  Future<void> init(Function onDoneInitializing, <more arguments> ...) async {
-    // ...
-    // initialization tasks
-    // ...
-
-    onDoneInitializing(); // <- invoke this method after all init tasks have 
-                          // completed
-  }
-}
-```
+![service provider code sample 1](../../diagrams/implementation/service_provider_1.png)
+![service provider code sample 2](../../diagrams/implementation/service_provider_2.png)
+![service provider code sample 3](../../diagrams/implementation/service_provider_3.png)
 
 ### Configuration Manager
 
-As mentioned in chapter [Service Provider](service-provider) the configuration 
-manager is a part of it. It also implements the Singleton design pattern 
-principle to ensure, that only one instance of itself and only one instance of 
-client config exists. The config manager provides various functions to write 
-and read data to / from a local json file, although its main purpose is 
-fetching a configuration from the study server. If no server can be reached 
-and / or no local json file exists, it holds a default configuration which can 
-be loaded any time.
+As mentioned in chapter Service Provider the configuration manager is a part 
+of it. It also implements the Singleton design pattern principle to ensure, 
+that only one instance of itself and only one instance of client config 
+exists. The config manager provides various functions to write and read data 
+to / from a local json file, although its main purpose is fetching a 
+configuration from the study server. If no server can be reached and / or no 
+local json file exists, it holds a default configuration which can be loaded 
+any time.
 
 ### Database Manager
 

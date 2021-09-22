@@ -1,9 +1,0 @@
-input-files:
-  - 00_abstract/report.md
-  - 01_introduction/report.md
-  - 02_background/report.md
-  - 03_methodology/report.md
-  - 04_implementation/report.md
-  - 05_results_and_discussion/report.md
-  - 06_conclusion/report.md
-  - 07_references/report.md
