@@ -4,8 +4,7 @@
 *Flutter* gives you the ability to create several applications (iOS, Android,
 web application) with a single code base. 
 Because of this, the development does not take place platform-specifically,
-but in one programming language and environment.
-
+but in one programming language and environment. 
 The programming language used with *Flutter* is *Dart*. 
 *Dart* is an object oriented programming language that is very similar to C#
 or Java. 
@@ -17,7 +16,6 @@ a developer has to ensure that all variables contain non null values.
 Otherwise the program will not compile.  
 This is a big advantage over Java since developers don't have to handle 
 *NullPointerException*s at runtime and don't risk forgetting them.
-
 All in all we tried to set up a reusable folder and file structure with
 separation of concerns between the frontend / user interface and the business
 logic.
@@ -30,7 +28,7 @@ manager and notifications have been initialized successfully before enabling
 the ui and allowing the user to interact with the app.  
 During runtime of the app the service provider can be accessed from everywhere 
 within the app's source code with help from the 
-[provider](https://pub.dev/packages/provider) package. This has the advantage 
+provider [17] package. This has the advantage 
 of utilizing the Singleton design pattern principle for all key parts of the 
 app.  
 While the provider package ensures the existence of only one service provider 

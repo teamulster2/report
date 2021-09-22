@@ -42,7 +42,7 @@ clients and on request supplies the clients also with the study config in which
 they are participating. To store the collected data from the clients the server 
 saves the information in a SQLite-database.
 
-### User, client and server communication
+### User, client and server communication  
 
 For the communication between the user, the client and the server, one can say
 that the user only communicates with the client app. The client app then
@@ -56,7 +56,7 @@ can also be transmitted after a later session. At the same time, the low
 level of data exchange also ensures that the user only receives relevant
 information to save on his own device. Additionally, after every completed
 self-test, the user is asked whether or not the data should be transmitted to
-the server. In figure 1 you can see the communication between user, client
+the server. In figure 2 you can see the communication between user, client
 and server in detail.
 
 ![Communication between user, client and server](../../diagrams/implementation/sq_user_client_server.png "Communication between user, client and server")

@@ -10,7 +10,6 @@ The project management method SCRUM in a simplified version was chosen for the
 project. This had the advantage that, on one hand, programming was agile
 under certain rules and on the other hand time management could be optimized,
 while overheads could be reduced.
-
 Repeating Scrum meetings were an important part of the daily routine which was
 occasionally expanded to talk about the current status and follow up on
 relevant issues. Due to the limited project time of five weeks, it was
@@ -21,7 +20,6 @@ regarding the development process could be addressed and improvement
 suggestions were made. Nevertheless, positive aspects were not neglected
 either. This complemented the project workflow and the satisfaction of the
 participants.
-
 Each team member was assigned a role which he was responsible for. The roles
 were e.g. 'Moderator', 'Scrum master' or 'GitHub repository moderator'.
 

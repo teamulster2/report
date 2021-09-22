@@ -6,7 +6,6 @@ feelings of “tiredness and lack of energy”, and decline in performance [1].
 It can be said that mental fatigue is felt much more often after mentally
 strenuous tasks than after physical exertion. Examples that can lead to
 cognitive fatigue are, strenuous work days without appropriate
-
 compensation or processing the tax return [2]. Especially with prolonged
 mental stress, we often feel drained and have the feeling that we can no
 longer continue. A classic example of this is a long drive. This strains our
@@ -26,18 +25,15 @@ part of a study on the basis of daily self-tests.
 Therefore, the application should be able to determine the general condition
 of a subject with the help of a questionnaire that should be filled out
 regularly replacing earlier paper questionnaires. Additionally, the
-
 application will be able to save their collected research data centrally on a
 server for further processing. 
 
 A self-test will be available. The app encourages the user to complete this
 test several times per day. The test itself contains two tasks that check the
 respondent's reaction time and memory ability. 
-
 In addition, with each run of the self-test, the current emotional state and
 the current activity of the test person are recorded so that conclusions can
 be drawn from them later on. 
-
 This information is stored in a database that is to be transferred regularly
 to a server database in order to be able to export all user data centrally for
 further analysis.
