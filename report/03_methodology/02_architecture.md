@@ -33,14 +33,21 @@ devices.
 
 #### Server application
 
-// TODO
+The server command line application playes the role of the data study control
+and data collection component. The researcher can set up the config file there
+for a study and export the collected data for further analysis.
+
+Thus the server is a simple http server which listens for data-posts from the 
+clients and on request supplies the clients also with the study config in which 
+they are participating. To store the collected data from the clients the server 
+saves the information in a SQLite-database.
 
 ### User, client and server communication
 
-For the communication between the user, the client an the server, one can say
+For the communication between the user, the client and the server, one can say
 that the user only communicates with the client app. The client app then
 forwards the data to the server if the user agrees to share them. The first
-time the app is used the user needs to enter the study server url so the app
+time the app is used the user needs to enter the study server URL so the app
 can fetch a config file from the server. This file initializes the app with
 all necessary information. Architecture designs like this offer the advantage
 that the user does not necessarily have to rely on a stable internet
