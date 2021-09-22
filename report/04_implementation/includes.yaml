@@ -1,4 +1,4 @@
 input-files:
  - 00_implementation.md
  - 01_flutter_application.md
- - 02_go_backend.md
+ - 02_go_server.md
