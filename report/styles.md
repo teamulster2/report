@@ -3,7 +3,7 @@ title: soTired - Report
 author:
   - Carina Strehler
   - Anna Gsell
-  - Kilian Drechsler
+  - treilik
   - Lukas Diehm
   - Marcel Arndt
 date: \today{}
