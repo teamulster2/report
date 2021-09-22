@@ -52,5 +52,5 @@ self-test, the user is asked whether or not the data should be transmitted to
 the server. In figure 1 you can see the communication between user, client
 and server in detail.
 
-![Communication between user, client and server](../diagrams/implementation/sq_user_client_server.jpg "Communication between user, client and server")
+![Communication between user, client and server](../../diagrams/implementation/sq_user_client_server.png "Communication between user, client and server")
 

@@ -49,5 +49,5 @@ need to be exported afterwards. At the same time, the questions of a specific
 study and the associated questionnaire are saved together with the selectable
 answers so that they can be accessed in the study.
 
-![ER diagram](../diagrams/database/ER_diragramm.drawio.png "er-diagram")
+![ER diagram](../../diagrams/database/ER_diragramm.drawio.png "er-diagram")
 

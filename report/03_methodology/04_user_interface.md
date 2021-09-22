@@ -10,7 +10,7 @@ due to time constraints and the limitations of the project. The two points
 above are the self-test and the questionnaire, which are illustrated in more
 detail below.
 
-![Home & Settings Page](../diagrams/implementation/ui_1.png "Home and settings page")
+![Home & Settings Page](../../diagrams/implementation/ui_1.png "Home and settings page")
 
 
 As described in Figure 4, the self-test first depicts the current mood and
@@ -29,10 +29,10 @@ overview of the current level and the score. This should give the user the
 feeling of knowing where he is in the game and how many tasks and areas are
 still to be expected.
 
-![Self Assessment](../diagrams/implementation/ui_3.png "Self Assessment")
+![Self Assessment](../../diagrams/implementation/ui_3.png "Self Assessment")
 
 
-![PVT and Spacial span task](../diagrams/implementation/ui_2.png "PVT and Spacial span task")
+![PVT and Spacial span task](../../diagrams/implementation/ui_2.png "PVT and Spacial span task")
 
 
 Another feature of the app is the questionnaire, which starts immediately
@@ -41,7 +41,7 @@ question and four options for each question, which can be staggered. A
 progress widget is also available, which shows which question you are
 currently dealing with.
 
-![Questionnaire](../diagrams/implementation/ui_4.png "Questionnaire")
+![Questionnaire](../../diagrams/implementation/ui_4.png "Questionnaire")
 
 
 Overall, the user interface is kept in dark mode and adapted to smartphones,
