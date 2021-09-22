@@ -34,7 +34,7 @@ devices.
 #### Server application
 
 The server command line application playes the role of the data study control
-and data collection component. Here, the researcher can set up the config file 
+and data collection component. The researcher can set up the config file there
 for a study and export the collected data for further analysis.
 
 Thus the server is a simple http server which listens for data-posts from the 
