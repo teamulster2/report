@@ -33,17 +33,14 @@ devices.
 
 #### Server application
 
-The server commandline application is only supposed to collect data from the
-multiple client subjects of a research study, and to provided a way of
-exporting the collected data. Thus the server is a simple http server which
-listens for data-posts from the clients and on request supplies the clients
-also with a config for a study in which they are participating. To store the
-collected data from the clients the server saves all in a SQLite-database.
-Since the server is a commandline application it is structured with multiple
-subcommands which is facilitated through 'cobra' a framework in 'go'.
-Each subcommand is responsible for one task like i.e.: starting the server or
-exporting the database.
+The server command line application playes the role of the data study controll 
+and data collection component. Here, the researcher can set up the config file 
+for a study and export the collected data for further analysis.
 
+Thus the server is a simple http server which listens for data-posts from the 
+clients and on request supplies the clients also with the study config in which 
+they are participating. To store the collected data from the clients the server 
+saves the information in a SQLite-database.
 
 ### User, client and server communication
 
