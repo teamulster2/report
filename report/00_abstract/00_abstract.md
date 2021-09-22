@@ -1,3 +1,7 @@
+\newpage
+
+![Logo soTired](../../diagrams/background_06.png){ width=300px }
+
 # Abstract
 
 Being fatigued is a common state of everyone's daily life. It is a natural
