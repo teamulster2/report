@@ -12,7 +12,7 @@ or Java.
 
 Its advantage over Java, C# etc. is a modern implementation where common 
 issues have been fixed, that older languages weren't aware of while being 
-developed. Dart for example implements null sound safety null checker where 
+developed. Dart for example implements null sound safety checker where 
 a developer has to ensure that all variables contain non null values. 
 Otherwise the program will not compile.  
 This is a big advantage over Java since developers don't have to handle 
@@ -41,8 +41,8 @@ implemented.
 Unfortunately, *Dart* is kind of restrictive when it comes to using 
 rudimentary programming principles like *Mutexes*. Therefore, the `init` 
 method of the service provider takes a so called `Closure` which can be 
-described as nameless function. This function is invoked after all 
-initialization tasks have been completed.  
+described as function with access to variable / value beyond her scope. This 
+function is invoked after all initialization tasks have been completed.  
 The code example below explains this process in a more detailed manner.
 
 ![service provider code sample 1](../../diagrams/implementation/service_provider_1.png)
@@ -111,6 +111,7 @@ should be easy to find by other programmers.
 
 Testing within soTired was considered as important as every other part of the 
 app. Every function of the config manager and the database manager is 
-rigorously unit tested which ensures a certain amount of code quality.  
+rigorously unit tested which ensures a certain amount of code quality / 
+confidence when changing code.  
 Due to various difficulties all ui parts and also the data transfer could not 
 be tested in stand alone unit tests.
