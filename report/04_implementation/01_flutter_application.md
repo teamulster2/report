@@ -30,7 +30,7 @@ The researcher can configure specific times, when notifications will be triggere
 In this way, the study participant can be specifically reminded to use the app. 
 The settings option can be found in the config, where both the desired notification 
 times formatted as UTC and the notification text can be set. The heading of each 
-notification is the set study name. Further methods have been implemented which 
+notification is the study name, which is set in the configuration of the app. Further methods have been implemented which 
 can be used to send notifications to the user at intervals or after certain events. 
 These methods were only added to make the app easier to expand and do not play a 
 role in the current version. One way to implement the notifications would have 
