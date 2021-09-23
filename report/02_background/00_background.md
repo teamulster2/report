@@ -24,7 +24,7 @@ attention span are measured, i.e. it is recorded how quickly the person reacts
 to an event and whether a reaction occurs at all. As a rule, such tests can
 take about 10 minutes [8].
 
-### Spatial Span Task
+### Spatial span task
 
 With the help of the *Spatial span task*, the subject's ability to remember
 should be tested. In order to perform the test, the user will be displayed a
